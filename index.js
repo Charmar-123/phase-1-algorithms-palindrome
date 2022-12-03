@@ -1,7 +1,17 @@
 function isPalindrome(word) {
   // Write your algorithm here
+
+  const stringArray = word.split('')
+  const reversedArray = stringArray.reverse()
+
+  if (reversedArray.join('') === word){
+    return true
+  } else { 
+    return false
+  }
 }
 
+isPalindrome("hello")
 /* 
   Add your pseudocode here
 */
